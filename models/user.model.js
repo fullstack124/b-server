@@ -24,6 +24,11 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true,
     },
+    is_social: {
+        type: Boolean,
+        required: true,
+        default:false,
+    },
 }, {
     timestamps: {
         createdAt: "created_at",
